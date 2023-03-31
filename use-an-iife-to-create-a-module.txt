@@ -1,0 +1,15 @@
+let funModule = (function(){
+  return {
+isCuteMixin: function(obj) {
+  obj.isCute = function() {
+    console.log('print something to the console');
+  };
+},
+singMixin: function(obj) {
+  obj.sing = function() {
+    console.log("Singing to an awesome tune");
+   };
+  }
+ }
+})();
+console.log(funModule)
